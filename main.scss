@@ -196,4 +196,80 @@ body {
     }
   }
   }
+  #section3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #carousel1 {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  #section4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #carousel2 {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .nav-btn.prev-slide {
+    position: absolute;
+    top: 33.5%;
+    left: -30px;
+    @media(max-width:700px){
+      left: -20px;
+      top: 30%;
+    }
+    &.large {
+      top:40%;
+      left:-50px;
+      @media(max-width:700px){
+        left:-20px
+      }
+    }
+  }
+  .nav-btn.next-slide {
+    position: absolute;
+    top: 33.5%;
+    right: -30px;
+    @media(max-width:700px){
+      right: -20px;
+      top: 30%;
+    }
+    &.large {
+      top:40%;
+      right:-20px;
+      @media(max-width:700px){
+        right:-10px
+      }
+    }
+  }
+  .nav-btn.prev-slide.menu {
+    left: 0px;
+    top:10px;
+    img {
+      width: 40px;
+    }
+  }
+  .nav-btn.next-slide.menu {
+    right: 0px;
+    top:10px;
+    img {
+      width: 40px;
+    }
+  }
+
 }

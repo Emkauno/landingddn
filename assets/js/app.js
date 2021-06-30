@@ -51,3 +51,45 @@ $(".buttonselector").click(function () {
   newUrl = url + checkEdad + "?facet=" + checkPrecio;
   window.open(newUrl, "_blank");
 });
+
+$('#carousel1.owl-carousel').owlCarousel({
+  loop: true,
+  margin:10,
+  nav:true,
+  autoplay: true,
+  autoplayTimeout: 4500,
+  autoplayHoverPause: true,
+  navText: ["<div class='nav-btn prev-slide'><img src='assets/img/prev.png'></div>", "<div class='nav-btn next-slide'><img src='assets/img/next.png'></div>"],
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+$('#carousel2.owl-carousel').owlCarousel({
+  loop: true,
+  margin:10,
+  nav:true,
+  autoplay: true,
+  autoplayTimeout: 4500,
+  autoplayHoverPause: true,
+  navText: ["<div class='nav-btn prev-slide'><img src='assets/img/prev.png'></div>", "<div class='nav-btn next-slide'><img src='assets/img/next.png'></div>"],
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:5
+        }
+    }
+})
