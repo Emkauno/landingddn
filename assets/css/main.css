@@ -16,11 +16,220 @@ body {
 
 #landingDDN {
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+#landingDDN #section2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #E9C8FF;
+  /* Modificador para dar la imagen de checkbox */
+  /* Oculta input original */
+  /* Radio personalizado usando <span> */
+  /* Cambia el checkbox personalizado cuando es pulsado */
+}
+
+#landingDDN #section2 p.alert-text {
+  padding: 5px 10px;
+  background: white;
+  color: #FF3598;
+  border: 2px solid #FF3598;
+  transition: all .3s ease;
+  opacity: 0;
+  height: 0;
+  transform: translateY(30px);
+  border-radius: 8px;
+  margin: 0;
+}
+
+#landingDDN #section2 p.alert-text.active {
+  height: unset;
+  opacity: 1;
+  transform: translateY(0px);
+  margin: 20px 0;
+}
+
+#landingDDN #section2 .cabecerasection {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#landingDDN #section2 .cabecerasection img {
+  width: 100%;
+}
+
+#landingDDN #section2 #toprow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  margin-top: 30px;
+}
+
+#landingDDN #section2 #toprow .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  border-radius: 8px;
+  padding: 20px 0;
+  cursor: pointer;
+  border: 2px solid transparent;
+  position: relative;
+  transition: all .5s ease;
+}
+
+#landingDDN #section2 #toprow .item:hover {
+  border: 2px solid white;
+}
+
+@media (max-width: 700px) {
+  #landingDDN #section2 #toprow .item {
+    padding: 5px;
+  }
+}
+
+#landingDDN #section2 #toprow .item.active {
+  border: 2px solid white;
+}
+
+#landingDDN #section2 #toprow .item:not(:last-child) {
+  margin-right: 20px;
+}
+
+#landingDDN #section2 #toprow .item img {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  #landingDDN #section2 #toprow .item img {
+    width: 100%;
+  }
+}
+
+#landingDDN #section2 #botrow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#landingDDN #section2 #botrow .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  border-radius: 8px;
+  padding: 20px 0;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: #dfb0ff;
+  transition: all .5s ease;
+}
+
+#landingDDN #section2 #botrow .item:hover {
+  border: 2px solid white;
+}
+
+@media (max-width: 700px) {
+  #landingDDN #section2 #botrow .item {
+    padding: 5px;
+  }
+}
+
+#landingDDN #section2 #botrow .item.active {
+  border: 2px solid white;
+}
+
+#landingDDN #section2 #botrow .item:not(:last-child) {
+  margin-right: 20px;
+}
+
+#landingDDN #section2 #botrow .item img {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  #landingDDN #section2 #botrow .item img {
+    width: 100%;
+  }
+}
+
+#landingDDN #section2 .custom-radio-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: arial;
+}
+
+#landingDDN #section2 .custom-radio-checkbox__show--checkbox {
+  background-image: url(../img/buscador/check-inactive.png);
+}
+
+#landingDDN #section2 .custom-radio-checkbox > input {
+  display: none;
+}
+
+#landingDDN #section2 .custom-radio-checkbox > .custom-radio-checkbox__show {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  transition: all .3s ease;
+}
+
+@media (max-width: 700px) {
+  #landingDDN #section2 .custom-radio-checkbox > .custom-radio-checkbox__show {
+    width: 10px;
+    height: 10px;
+    margin-top: 0px;
+  }
+}
+
+#landingDDN #section2 .custom-radio-checkbox > input:checked + .custom-radio-checkbox__show--checkbox {
+  background-image: url(../img/buscador/check.png);
+}
+
+#landingDDN #section2 .buttonselector {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transform: scale(1);
+  transition: all .3s ease;
+  margin: 20px 0;
+}
+
+#landingDDN #section2 .buttonselector:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 700px) {
+  #landingDDN #section2 .buttonselector {
+    width: 45%;
+  }
+}
+
+#landingDDN #section2 .buttonselector img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
