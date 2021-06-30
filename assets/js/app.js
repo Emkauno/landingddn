@@ -2,22 +2,22 @@ var url = "https://simple.ripley.cl/jugueteria-y-ninos/juguetes-por-edad/";
 var newUrl = "";
 var alertText = $("#section2 p.alert-text");
 var checkBoxTop = $('#toprow .item input[type="checkbox"]');
+var checkBoxBot = $('#botrow .item input[type="checkbox"]');
 var ageItem = $("#section2 #toprow .item");
-var ageBorder = $("#section2 #toprow .item span.test");
 var priceItem = $("#section2 #botrow .item");
 
 $(checkBoxTop).on("change", function () {
   $(checkBoxTop).not(this).prop("checked", false);
 });
 
-$('#botrow input[type="checkbox"]').on("change", function () {
-  $('#botrow input[type="checkbox"]').not(this).prop("checked", false);
+$(checkBoxBot).on("change", function () {
+  $(checkBoxBot).not(this).prop("checked", false);
 });
 
 $(ageItem).click(function () {
   $(ageItem).removeClass("active");
   $(this).addClass("active");
-  var checks = $('#toprow input[type="checkbox"]');
+  var checks = $(checkBoxTop);
   checks.not(this).prop("checked", false);
   $(this)
     .find("input[type=checkbox]")
@@ -27,9 +27,8 @@ $(ageItem).click(function () {
 $(priceItem).click(function () {
   $(priceItem).removeClass("active");
   $(this).addClass("active");
-  var checks = $('#botrow input[type="checkbox"]');
+  var checks = $(checkBoxBot);
   checks.not(this).prop("checked", false);
-
   $(this)
     .find("input[type=checkbox]")
     .prop("checked", !$(this).find("input[type=checkbox]").prop("checked"));
@@ -51,5 +50,4 @@ $(".buttonselector").click(function () {
   //Use Array.join() method to join the array elements by " OR "
   newUrl = url + checkEdad + "?facet=" + checkPrecio;
   window.open(newUrl, "_blank");
-  newUrl = "";
 });
