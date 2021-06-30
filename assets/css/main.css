@@ -57,6 +57,11 @@ body {
   margin: 20px 0;
 }
 
+#landingDDN #section2 p.alert-text img {
+  width: 100%;
+  max-width: 100px;
+}
+
 #landingDDN #section2 .cabecerasection {
   margin-top: 20px;
   width: 100%;
